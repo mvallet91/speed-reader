@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Reader with Metronome</title>
+    <style>
+        /* Add your CSS styles here */
+        body { font-family: Arial, sans-serif; }
+        #pdf-canvas { border: 1px solid black; }
+    </style>
+</head>
+<body>
+    <h1>PDF Reader with Metronome</h1>
+
+    <input type="file" id="file-input" accept=".pdf"/>
+    <button id="upload-btn">Upload PDF</button>
+
+    <div>
+        <label for="metronomeBPM">Metronome BPM:</label>
+        <input type="number" id="metronomeBPM" value="60">
+        <button id="start-metronome">Start Metronome</button>
+        <button id="stop-metronome">Stop Metronome</button>
+    </div>
+
+    <canvas id="pdf-canvas"></canvas>
+
+    <script src="path/to/pdf.js"></script>
+    <!-- Add your JavaScript file here -->
+    <script src="app.js"></script>
+</body>
+</html>
